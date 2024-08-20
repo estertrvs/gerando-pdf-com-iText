@@ -1,0 +1,19 @@
+# Maven target directory
+target/
+
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# VSCode specific files
+.vscode/
+
+# Log files
+*.log
+
+# Compiled class files
+*.class
+
+# Generated PDF files
+*.pdf
