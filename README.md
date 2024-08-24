@@ -14,13 +14,54 @@ Esses exemplos são aplicáveis para diversas situações, como a geração de r
 
 ### Link para o Vídeo Tutorial
 
-- https://www.youtube.com/watch?v=Zjk-CygjxGs
+- https://www.youtube.com/watch?v=kgL-eOVBGHs
 
 ### Links utilizados para pesquisa
 
 - https://www.baeldung.com/java-pdf-creation
 
 - https://mvnrepository.com/artifact/com.itextpdf/itextpdf
+
+## Como Rodar o Projeto e Gerar o JAR
+
+### Pré-requisitos
+
+- **Java 8 ou superior**: Certifique-se de ter o Java Development Kit (JDK) instalado na sua máquina.
+- **Maven**: O projeto utiliza Maven para gerenciamento de dependências e construção do projeto. Verifique se o Maven está instalado e configurado corretamente.
+
+### Passos para Rodar o Projeto
+
+1. **Clone o Repositório**:
+
+   Clone este repositório na sua máquina local usando o comando:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+
+2. **Navegue até o Diretório do Projeto**:
+
+   Acesse a pasta do projeto:
+
+   ```bash
+   cd gerar-pdf-itext
+
+3. **Compile o Projeto e Gere o JAR:**:
+
+   Use o Maven para compilar o projeto e gerar o arquivo .jar executável:
+
+   ```bash
+   mvn compile
+   mvn clean package
+
+O comando `mvn clean package` é usado no Maven para realizar uma série de tarefas necessárias para compilar e empacotar o projeto em um arquivo `.jar`. Vamos entender o que cada parte desse comando faz:
+
+- **`mvn clean`**: Esta parte do comando é responsável por limpar o projeto, o que significa que o Maven remove todos os arquivos gerados em builds anteriores, como os arquivos compilados e o próprio `.jar`. Isso garante que você esteja trabalhando com um ambiente de compilação limpo, evitando conflitos e problemas decorrentes de arquivos antigos ou corrompidos.
+
+- **`mvn package`**: Após limpar o projeto, o Maven compila o código-fonte e empacota o projeto em um arquivo `.jar`. Este processo inclui:
+  - **Compilação do código**: Todos os arquivos `.java` são compilados em arquivos `.class`.
+  - **Empacotamento**: Os arquivos `.class`, recursos, e bibliotecas dependentes são empacotados em um único arquivo `.jar`, pronto para ser executado.
+
+O uso do comando `mvn clean package` é uma prática recomendada para garantir que a compilação do projeto seja feita de maneira correta e consistente, sem resíduos de builds anteriores que possam interferir no resultado final.
 
 ## Classes Utilizadas para Gerar o PDF
 
